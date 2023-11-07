@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+
 def multiple_returns(sentence):
-    if len(sentence) == 0:
-            first = None
+    s_len = len(sentence)
+    if s_len == 0:
+        return (0, None)
     else:
-            first = sentence[0]
-    return len(sentence), first
+        present = (s_len, sentence[0])
+        return present
